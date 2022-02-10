@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 320px;
+    font-family: 'Kalam', cursive, sans-serif;
+    margin: 0 auto;
+}
+h1 {
+    background-color: darkslateblue;
+    color: floralwhite;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+div {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    
+}
+hr {
+    border-style: double;
+    height: 5px;
+    width: 90%;
+    margin: 0 auto;
+ }
+form {
+    width: 100%;
+    display: inline;
+    margin: 0 auto;
+}
+fieldset {
+    border: none;
+}
+.container {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+}
+legend {
+    font-weight: bold;
+    font-size: 23px;
+    padding: 10px 0;
+}
+label {
+    color: lightslategray;
+    margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="zip"],
+input[type="tel"],
+textarea,
+select {
+   background: rgba(255,255,255,0.1);
+   border: none;
+   font-size: 16px;
+   height: auto;
+   margin: 0;
+   outline: 0;
+   padding: 15px;
+   width: 100%;
+   background-color: #e8eeef;
+   color: #8a97a0;
+   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+   margin-bottom: 30px;
+   transition: background-color 2s, transform 2s;
+}
+#zip {
+    width: 50%;
+}
+label.letter {
+   display: block;
+   font-size: large;
+   font-weight: bold;
+   padding: 10px 0 10px 0;
+   margin-bottom: 0;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    margin-bottom: 15px;
+}
+button {
+    padding: 19px 30px 18px 30px;
+    color: floralwhite;
+    background-color: #4bc99f;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #3ac17e;
+    border-width: 1px 1px 3px;
+    margin-bottom: 5px;
+    transition: background-color 2s, transform 2s;
+}
+button:hover {
+    transform: rotate(360deg);
+    background-color: cadetblue;
+}
+footer {
+    text-align: center;
+    color: rgb(176, 183, 190);
+}
+::-webkit-input-placeholder {
+    text-align: right;
+}
+input:focus,
+select:focus,
+textarea:focus {
+    border: solid slategrey;
+    background-color: rgb(240, 218, 253);
+    transform: translate(12px, 20%);
+
+}
+@media screen and (min-width: 768px) {
+    body {
+        width: 100%;
+    }
+    div {
+        display: block;
+        margin: auto;
+        justify-content: center;
+    }
+    form {
+        width: 50%;
+        margin: 0;
+    }
+    fieldset {
+        width: 70%;
+        margin: auto;
+    } 
+    .container {
+        width: 70%;
+        display: inline;
+        justify-content: space-between;
+        margin-left: 16%;
+        border-bottom: solid black;
+    }
+    .contact {
+        width: 100px;
+        display: inline-block;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="zip"],
+    input[type="tel"],
+    select {
+        
+        width: 70%;
+       
+    }
+    #zip {
+        width: 25%;
+    }
+
+}
